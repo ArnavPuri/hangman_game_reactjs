@@ -8,10 +8,12 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "tailwindcss": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "npx tailwindcss build styles.css -o src/output.css",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
